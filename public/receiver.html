@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receiver</title>
+    <link rel="stylesheet" href="sender.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Routersync-logo.png" alt="RouterSync Logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sender.html">Send</a>
+            <a href="receiver.html">Receive</a>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <section class="container">
+            <section class="main-content">
+                <div class="app">
+                    <div class="screen join-screen active">
+                        <div class="form">
+                            <div class="form-input">
+                                <label for="join-id"><h4>Enter Room ID to Connect :</h4></label>
+                                <input type="text" id="join-id">
+                            </div>
+                            <div class="form-input">
+                                <button id="receiver-start-con-btn">Connect</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screen fs-screen">
+                        <div class="files-list">
+                            <div class="title">Shared Files:</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+    <script type="text/javascript" src="socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="receiver.js"></script>
+</body>
+</html>
